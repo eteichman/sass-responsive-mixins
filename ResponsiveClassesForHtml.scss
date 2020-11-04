@@ -1,0 +1,60 @@
+.onlyTablet {
+    @include media-mobile {
+        display: none !important;
+    }
+
+    @include media-smallDesktopAndUp {
+        display: none !important;
+    }
+}
+
+.onlyMobile {
+    @include media-tabletAndUp {
+        display: none !important;
+    }
+}
+
+.notMobile {
+    @include media-mobile {
+        display: none !important;
+    }
+}
+
+.notTablet {
+    @include media-tablet {
+        display: none !important;
+    }
+}
+
+.onlyMobileAndTablet {
+    @include media-smallDesktopAndUp {
+        display: none !important;
+    }
+}
+
+.onlyLargeDesktop{
+    @include media-smallDesktop {
+        display: none;
+    }
+
+    @include media-mobileAndTablet {
+        display: none;
+
+    }
+}
+
+.onlySmallDesktop {
+    @include media-largeDesktop {
+        display: none;
+    }
+
+    @include media-mobileAndTablet {
+        display: none;
+    }
+}
+
+.onlyDesktop {
+    @include media-mobileAndTablet {
+        display: none !important;
+    }
+}
